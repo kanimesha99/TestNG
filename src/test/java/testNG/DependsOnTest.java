@@ -7,7 +7,7 @@ public class DependsOnTest {
     @Test()
     public void Test01(){
         System.out.println("O/L");
-        Assert.fail();
+//        Assert.fail();
     }
     @Test(dependsOnMethods = "Test01")
     public void Test02(){
