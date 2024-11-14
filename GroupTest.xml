@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GroupTest suite">
+    <test name="Group Test cases">
+        <groups><!-- In here we add the group name we created in the group test file and add the groups that we need to run.
+         As an example if we add a login group,and we want to run only the login group test cases we put login here-->
+            <run>
+                <include name="S"> </include><!-- this is for include a tag-->
+                <exclude name="R"> </exclude><!-- this is for remove a tag from running test cases-->
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testNG.GroupTest">
+
+            </class>
+        </classes>
+    </test>
+</suite>
