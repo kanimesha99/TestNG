@@ -15,5 +15,4 @@ public class TestNGAnnotation01 {
     public void test(){
         System.out.println("This is a TestNG project");
     }
-
 }
